@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: black;
+  color: white;
+}
+.state-pic {
+  height: 50vh;
+  overflow-y: hidden;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.state-pic img {
+  width: 80vw;
+  object-fit: cover;
+  opacity: 0.9;
+  border-radius: 1rem;
+}
+.state-details {
+  width: 80vw;
+  margin: 0rem auto;
+  border-bottom: 1px solid rgb(130, 130, 130);
+  padding-bottom: 3rem;
+}
+
+.league-spartan {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.state-details p {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: rgb(206, 206, 206);
+  font-weight: 800;
+}
+.state-insights {
+  width: 80vw;
+  margin: 1rem auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  color: orange;
+}
+.state-insights h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.item {
+  width: 80vw;
+  margin: 1rem auto;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 1.5rem;
+}
+.item h3 {
+  font-size: 2.5rem;
+  color: lightblue;
+}
+.item p {
+  font-size: 1.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  height: 2.5rem;
+  background-color: rgba(71, 71, 71, 0.427);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+footer a {
+  margin-left: 0.5rem;
+  color: orange;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+footer a:hover {
+  margin-left: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.quote {
+  font-size: 2rem;
+  color: orange;
+}
+
+.title-container-state {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  align-items: center;
+}
+
+.sanskriti-state {
+  background-image: linear-gradient(
+    to right,
+    #ff9933,
+    #ffffff,
+    #138808
+  ); /* Saffron, White, and Green */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  z-index: 999;
+}
+
+/* @keyframes appear {
+    from {
+      opacity: 0%;
+      scale: 0.5;
+    }
+    to {
+      opacity: 100%;
+      scale: 1;
+    }
+  }
+  .animate {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  } */
+
+.state-button {
+  cursor: pointer;
+  margin-top: 1rem;
+  color: aquamarine;
+  width: 100px;
+  transition: 0.2s ease-in;
+}
+
+.state-button:hover {
+  cursor: pointer;
+  margin-top: 1rem;
+  color: rgb(255, 255, 255);
+  width: 100px;
+}

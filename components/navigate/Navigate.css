@@ -1,0 +1,34 @@
+.nav-butt {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.title-container {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+}
+
+.sanskriti {
+  position: absolute;
+  left: 1rem;
+  background-image: linear-gradient(
+    to right,
+    #ff9933,
+    #ffffff,
+    #138808
+  ); /* Saffron, White, and Green */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  z-index: 999;
+}

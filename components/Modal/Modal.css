@@ -1,0 +1,118 @@
+/* Modal Overlay */
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction when modal is closed */
+  transition: opacity 0.3s ease-in-out; /* Fade effect */
+}
+
+/* Modal Container */
+.modal-container {
+  background-color: #1e1e1e;
+  color: orange;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: scale(0.9); /* Start from a smaller size */
+  opacity: 0; /* Start hidden */
+  transition: transform 0.3s ease, opacity 0.3s ease-in-out; /* Scale and fade transition */
+  font-size: 1.6rem;
+}
+
+/* When Modal is Active (Visible) */
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container.active {
+  transform: scale(1); /* Grow to full size */
+  opacity: 1; /* Fade in */
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  color: #72b0cc;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-close-button:hover {
+  color: #0381e7;
+}
+
+/* Modal Body */
+.modal-body {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.modal-body p {
+}
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-close-btn,
+.modal-save-btn {
+  background-color: #333333;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.modal-close-btn {
+  background-color: #19cc40;
+}
+
+.modal-save-btn {
+  background-color: #0c7e11;
+}
+
+.modal-close-btn:hover {
+  background-color: #068602;
+}
+
+.modal-save-btn:hover {
+  background-color: #0056b3;
+}
+
+.modal-close-btn:focus,
+.modal-save-btn:focus {
+  outline: none;
+}
